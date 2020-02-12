@@ -34,6 +34,7 @@ def find_greater_pair(src)
       else
         inner_arry.push(src[row][col+1])
       end
+      col += 1
     end 
      outer_arry << inner_arry
     row += 1
