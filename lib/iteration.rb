@@ -27,7 +27,6 @@ def find_greater_pair(src)
   while row < src.count do
     col = 0 
     inner_arry = []
-    
     while col < src[row].count do 
       if src[row][col] > src[row][col+1]
         inner_arry.push(src[row][col])
