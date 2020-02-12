@@ -27,14 +27,12 @@ def find_greater_pair(src)
   while row < src.count do
     col = 0 
     inner_arry = []
-    while col < src[row].count do 
-      if src[row][col] > src[row][col+1]
-        inner_arry.push(src[row][col])
-      else
-        inner_arry.push(src[row][col+1])
-      end
-      col += 1
-    end 
+    
+    if src[row][col] > src[row][col+1]
+      inner_arry << src[row][col]
+    else
+      inner_arry << src[row][col+1]
+    end
      outer_arry << inner_arry
     row += 1
   end 
